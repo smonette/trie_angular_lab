@@ -4,6 +4,9 @@
   <input type="text" placeholder="description" ng-model="newWord.description">
   <button>Save</button>
 </form>
-<div ng-repeat="word in words">
-  <p><strong>{{word.name}}</strong> {{word.description}}</p>
-</div>
+
+  <h1>{{words.greeting}}</h1>
+<!--   <div ng-repeat="word in words">
+    <p>meow<strong>{{word.name}}</strong> {{word.description}}</p>
+  </div> -->
+  {{words.words}}

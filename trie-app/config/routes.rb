@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
   root to: "words#index"
-  resources :words, except: [:edit, :new]
+  resources :words
   resources :word_templates
 end
