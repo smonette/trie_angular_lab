@@ -1,0 +1,9 @@
+<h2>Words!</h2>
+<form ng-submit="words.addWord(newWord)">
+  <input type="text" placeholder="word" ng-model="newWord.name">
+  <input type="text" placeholder="description" ng-model="newWord.description">
+  <button>Save</button>
+</form>
+<div ng-repeat="word in words">
+  <p><strong>{{word.name}}</strong> {{word.description}}</p>
+</div>
